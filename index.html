@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src ="particles.js"></script>
+    <style>
+        /* CSS for the footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: right;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="login-form">
+        
+        <div class="form-title">
+            Login Form
+        </div>
+        <div class="form-input">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        </div>
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div class="captcha">
+            <label for="captcha-input">Enter Captcha</label>
+            <div class="preview"></div>
+            <div class="captcha-form">
+                <input type="text" id="captcha-form" placeholder="Enter Captcha text">
+                <button class="captcha-refresh">
+                    <img src="refresh.png" alt="Refresh Captcha">
+                </button>
+            </div>
+        </div>
+        <div class="form-input">
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+
+    <footer id="page-footer">
+        Created by Aayushi Baijal 22BCT0222
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
